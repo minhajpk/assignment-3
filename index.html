@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
     .font-ADLaM{
         font-family: "ADLaM Display", serif;
@@ -20,7 +21,7 @@
 </head>
 <body class="font-ADLaM">
     <header class="">
-       <nav class="bg-[#FFF9F4] " >
+       <nav class="bg-[#FFF9F4]" >
         <div class="navbar lg:max-w-7xl mx-auto">
   <div class="navbar-start">
     <div class="dropdown">
@@ -30,7 +31,7 @@
     </div>
     <div class="flex space-x-2">
       <img src="c1-assets/logo-header.png">
-    <a class="text-xl mt-3 font-light">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+    <a class="text-xl mt-3 font-light lg:block hidden">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
   </div>
   </div>
   <div class="navbar-center hidden lg:flex">
@@ -41,9 +42,10 @@
     </ul>
   </div>
   <div class="navbar-end space-x-4">
+    <i class="fa-solid fa-bars lg:hidden"></i>
     <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
+          class="h-5 w-5 hidden lg:block"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor">
@@ -55,7 +57,7 @@
         </svg>
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-5 w-5 hidden lg:block"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor">
@@ -65,13 +67,13 @@
           stroke-width="2"
           d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
       </svg>
-    <a class="btn border-amber-400 bg-transparent font-light ">Login</a>
-    <a class="btn bg-[#FFDC26] font-light">Register</a>
+    <a class="btn border-amber-400 bg-transparent font-light hidden lg:flex ">Login</a>
+    <a class="btn bg-[#FFDC26] font-light hidden lg:flex">Register</a>
   </div>
 </div>
   </nav>
   <!-- Banner -->
-  <div class="hero lg:max-w-7xl lg:mx-auto max-auto lg:h-[750px] lg:mt-24 mt-12 lg:place-items-start bg-bottom"
+  <div class="hero lg:max-w-7xl lg:mx-auto max-auto h-[600px] lg:h-[750px]  bg-no-repeat w-full bg-[350px,0] lg:bg-cover lg:mt-24 mt-12 lg:place-items-start bg-bottom"
   style="background-image: url(c1-assets/cat-big.png);">
   <div class="hero-content text-start space-y ">
     <div class="max-w-md">
@@ -79,7 +81,7 @@
       <p class="mb-5 mt-4 text-gray-500">
         Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
       </p>
-      <button class="btn bg-[#FFDC26] mt-4 font-light">Find a Pet</button>
+      <button class="btn bg-[#FFDC26] mt-4 font-light animate-bounce">Find a Pet</button>
     </div>
   </div>
 </div>
@@ -87,10 +89,10 @@
 
     <main >
       <!-- browse My Category -->
-      <section class="lg:max-w-7xl mx-auto">
+      <section class="lg:max-w-7xl mx-auto px-2">
           <h1 class=" text-4xl mt-24">Browse By Categories</h1>
-          <div class="lg:mt-12 lg:grid lg:grid-cols-6 md:grid md:grid-cols-3 grid grid-cols-2 gap-6">
-            <div class="card bg-base-100 w-52 h-64 shadow-xl bg-[#F9DF8A]">
+          <div class="lg:mt-12 lg:grid lg:grid-cols-6 md:grid md:grid-cols-3 grid grid-cols-2 gap-2 sm:gap-6">
+            <div class="card bg-base-100 w-44 sm:w-52 h-64 shadow-xl bg-[#F9DF8A]">
               <div class="avatar mx-auto mt-9 ">
                 <div class="w-24 rounded-full bg-white p-7">
                   <img src="c1-assets/dog-cartoon.png" class="w-13"/>
@@ -101,7 +103,7 @@
                 <p>3 Items</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-52 h-64 shadow-xl bg-[#F9DF8A]">
+            <div class="card bg-base-100 w-44 sm:w-52 h-64 shadow-xl bg-[#F9DF8A]">
               <div class="avatar mx-auto mt-9 ">
                 <div class="w-24 rounded-full bg-white p-7">
                   <img src="c1-assets/fish-cartoon.png" class="w-13"/>
@@ -112,7 +114,7 @@
                 <p>3 Items</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-52 h-64 shadow-xl bg-[#F9DF8A]">
+            <div class="card bg-base-100 w-44 sm:w-52 h-64 shadow-xl bg-[#F9DF8A]">
               <div class="avatar mx-auto mt-9 ">
                 <div class="w-24 rounded-full bg-white p-7">
                   <img src="c1-assets/cat-cartoon.png" class="w-13"/>
@@ -123,7 +125,7 @@
                 <p>3 Items</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-52 h-64 shadow-xl bg-[#F9DF8A]">
+            <div class="card bg-base-100 w-44 sm:w-52 h-64 shadow-xl bg-[#F9DF8A]">
               <div class="avatar mx-auto mt-9 ">
                 <div class="w-24 rounded-full bg-white p-7">
                   <img src="c1-assets/bird-cartoon.png" class="w-13"/>
@@ -134,7 +136,7 @@
                 <p>3 Items</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-52 h-64 shadow-xl bg-[#F9DF8A]">
+            <div class="card bg-base-100 w-44 sm:w-52 h-64 shadow-xl bg-[#F9DF8A]">
               <div class="avatar mx-auto mt-9 ">
                 <div class="w-24 rounded-full bg-white p-7">
                   <img src="c1-assets/cute-pet-small.png" class="w-13"/>
@@ -145,7 +147,7 @@
                 <p>3 Items</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-52 h-64 shadow-xl bg-[#F9DF8A]">
+            <div class="card bg-base-100 w-44 sm:w-52 h-64 shadow-xl bg-[#F9DF8A]">
               <div class="avatar mx-auto mt-9 ">
                 <div class="w-24 rounded-full bg-white p-7">
                   <img src="c1-assets/rabbit-cartoon.png" class="w-13"/>
@@ -160,8 +162,8 @@
       </section>
       <Section class="mt-24 bg-[#FFF9F4]">
         <h3 class="text-4xl pt-28 pb-12 lg:max-w-7xl mx-auto">Trending Pet Products</h3>
-        <div class="lg:max-w-7xl mx-auto flex space-x-6">
-          <div class="card relative bg-[#F9DF8A] w-[424px] h-[402px]  shadow-xl ">
+        <div class="lg:max-w-7xl mx-auto flex flex-col lg:flex-row gap-5 space-x-6 pb-36">
+          <div class="card relative bg-[#F9DF8A] w-full lg:w-[424px] h-[402px]  shadow-xl ">
             <div class="card-body flex-grow-0 space-y-4 ">
               <h2 class="card-title">T-Shirt for Dogs</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -169,15 +171,15 @@
                 <button class="btn">Shop Now</button>
               </div>
             </div>
-            <div class=" absolute bottom-0 w-60 ml-48">
+            <div class=" absolute right-5 lg:right-0 bottom-0 w-60 ml-48">
               <img
                 src="c1-assets/cute-pet-small.png"
                 alt="Dogs"/>
               </div>
           </div>
           <!-- small card -->
-          <div class="grid grid-cols-3 gap-6">
-            <div class="flex w-64 h-28 shadow-md rounded-lg  space-x-4">
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg  space-x-4 ">
               <div class="bg-[#FFF9F4] aspect-square w-20  ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div class="mt-5">
                 <p class="font-light"><div class="rating rating-xs">
@@ -187,7 +189,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4 ">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -197,7 +199,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -207,7 +209,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4 ">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -217,7 +219,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -227,7 +229,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -237,7 +239,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -247,7 +249,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -257,7 +259,7 @@
                 <p class="font-light text-base">$39.99</p>
               </div>
             </div>
-            <div class="flex w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
+            <div class="flex w-44 sm:w-64 h-28 shadow-md rounded-lg items-start justify-start space-x-4">
               <div class="bg-[#FFF9F4] aspect-square max-w-20 ml-4 mt-4"><img src="c1-assets/dog-cartoon.png"></div>
               <div>
                 <p class="font-light"><div class="rating rating-xs">
@@ -271,28 +273,49 @@
         </div>
       </Section>
       <Section class="mt-24">
-        <div class="lg:max-w-7xl mx-auto flex h-[491px] border bg-[#FFF9F4] space-x-40 rounded-2xl mb-[-265px] overflow-auto">
-          <div class="min-w-72 mt-10 ml-20" ><img src="c1-assets/cute-pet-mid.png" alt=""></div>
-          <div class="mt-20 space-y-5">
+        <div class="lg:max-w-7xl lg:mx-auto flex flex-col lg:flex-row gap-9">
+          <div class="w-full lg:w-[784px] h-[480px] flex flex-col lg:flex-row bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] justify-center rounded-2xl">
+            <div class="p-5 lg:ml-24 lg:mt-36 text-start w-72 ">
+              <p class="text-xl font-thin mb-3">Under Price</p>
+              <h3 class="text-2xl">Pet Grooming Mitt</h3>
+              <p class="text-lg text-white mt-1">(Easy Hair Removal)</p>
+              <h2 class="text-4xl mt-4">$7.99</h2>
+            </div>
+            <div class="ml-12 w-48 items-end"><img src="c1-assets/cute-dog-mid.png" alt=""></div>
+          </div>
+          <div class="flex lg:w-[512px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] justify-center rounded-2xl">
+            <div class="mt-16 pl-12 w-64 space-y-4">
+              <h3 class="text-2xl">T-Shirt for Dogs</h3>
+              <h2 class="text-4xl">$7.99</h2>
+            </div>
+            <div class="mt-24 w-[312px]"><img src="c1-assets/cute-pet-mid.png" alt=""></div>
+          </div>
+        </div>
+      </Section>
+      <Section class="mt-24">
+        <div class="lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse lg:h-[491px] border bg-[#FFF9F4] p-5 rounded-2xl mb-[-265px] relative z-50 ">
+          <div class="w-44  lg:min-w-72 lg:mt-10 lg:ml-20" ><img src="c1-assets/cute-pet-mid.png"></div>
+          <div class="lg:mt-20 lg:space-y-5">
             <h2 class="text-3xl">Get Pawsome News!</h2>
             <p>Exclusive training tips, ticks, product deals and more.</p>
-            <input type="email" placeholder="Enter Your Email" class=" h-16 w-[472px] rounded-2xl p-5"><br>
+            <input type="email" placeholder="Enter Your Email" class=" h-16 w-full lg:w-[472px] rounded-2xl p-5"><br>
             <button class="btn">Subscribe</button>
           </div>
         </div>
       </Section>
+      
     </main>
     <!-- Footer -->
-    <footer class="footer bg-[#f3e5a0] text-base-content p-10 h-[650px] ">
-      <div class="lg:max-w-7xl mx-auto grid grid-cols-3 pt-[374px]">
+    <footer class="footer bg-[#f3e5a0] text-base-content p-10 lg:h-[650px] ">
+      <div class="lg:max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10  pt-[374px]">
       <nav class="space-y-4">
         <div class="flex space-x-3">
        <img src="c1-assets/logo-footer.png" alt="Logo">
        <h4 class=" mt-3 text-lg">Browse Pets</h4>
       </div>
-      <p class="w-[400px]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      <p class="lg:w-[400px]">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
       </nav>
-      <div class="ml-40">
+      <div class="lg:ml-40">
         <ul class="space-y-4">
           <li><a class="link link-hover">Find a Pets</a></li>
           <li><a class="link link-hover">Contact Us</a></li>
@@ -300,7 +323,7 @@
         </ul>
         
     </div>
-      <div class="ml-72 space-y-4">
+      <div class="lg:ml-72 space-y-4">
         <nav>
           <h6 class="footer-title">Social</h6>
           <div class="grid grid-flow-col gap-4">
